@@ -4,3 +4,10 @@
 </mat-card>
 <!-- Toolbar -->
 
+<mat-date-range-input [rangePicker]="picker">
+  <input matStartDate formControlName="start" placeholder="Start date">
+  <input matEndDate formControlName="end" placeholder="End date">
+</mat-date-range-input>
+
+<mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+<mat-date-range-picker #picker></mat-date-range-picker>
