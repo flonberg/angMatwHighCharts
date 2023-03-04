@@ -1,5 +1,6 @@
 <nav>
   <a class="button" routerLink="/Main">Main</a> |
+  <a class="button" routerLink="/Graph">Graph</a> |
 </nav>
 <mat-card>
   <mat-card-content>Simple card</mat-card-content>
@@ -10,6 +11,7 @@
   <input matStartDate formControlName="start" placeholder="Start date">
   <input matEndDate formControlName="end" placeholder="End date">
 </mat-date-range-input>
+
 
 <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
 <mat-date-range-picker #picker></mat-date-range-picker>

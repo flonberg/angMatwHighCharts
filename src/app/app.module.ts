@@ -9,10 +9,12 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatNativeDateModule} from '@angular/material/core';
 import { RouterModule } from '@angular/router';
 import { MainComponent } from './main/main.component';
+import { GraphComponent } from './graph/graph.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    GraphComponent
   ],
   imports: [
     BrowserModule,
@@ -24,6 +26,7 @@ import { MainComponent } from './main/main.component';
     BrowserModule,
     RouterModule.forRoot([
       {path: 'Main', component: MainComponent},
+      {path: 'Graph', component: GraphComponent},
   
     ]),
   ],
